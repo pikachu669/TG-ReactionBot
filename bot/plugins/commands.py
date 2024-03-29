@@ -24,13 +24,5 @@ from bot.modules.static import *
 )
 async def send_emojis(_, msg: Message):
     return await msg.reply(
-        text=SupportedEmojisText,
-        quote=True,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(text='Reference', url='t.me')
-                ]
-            ]
-        )
+        
     )
